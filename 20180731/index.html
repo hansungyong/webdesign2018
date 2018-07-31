@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<style>
+		*{margin:0;padding: 0;}
+		li{list-style:none}
+		a{text-decoration:none;color:black;}
+		body{font-family: 'Nanum Gothic', sans-serif;}
+
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("div.submenu").hide();
+			$("#gnb>li").hover(
+				function(){
+					$("div.submenu").eq($(this).index()).slideDown();
+					return false;
+				},
+				function(){
+					$("div.submenu").hide();
+				}
+				);
+		});
+	</script>
+	<style>
+		#main_header{position:relative;min-width:1200px;}
+		#header_top{height:40px;background:#F5F5F5}
+		#header_top > div.top{width:1200px;margin:0 auto;}
+		#header_middle{height:130px;background:#fff;border-bottom: 2px solid #E4002B;}
+		#header_middle > div.middle{
+			background:url("./img/menubg.jpg") no-repeat bottom;width:1200px;margin:0 auto;height:130px;}
+
+		#gnb_area{width:100%;position:absolute;left:0;bottom:0;_background:red}
+		#gnb_area>ul{width:1200px;margin:0 auto;}
+		#gnb_area>ul>li{float: left;height:50px;padding:0 30px;}
+		#gnb_area>ul>li:first-child{margin-left:200px;}
+
+		#gnb_area>ul>li:nth-child(1)>div.submenu>ul{padding: 15px 0 11px calc(50% - 400px);}
+		#gnb_area>ul>li:nth-child(2)>div.submenu>ul{padding: 15px 0 11px calc(50% - 250px);}
+		#gnb_area>ul>li:nth-child(3)>div.submenu>ul{padding: 15px 0 11px calc(50% - 150px);}
+		#gnb_area>ul>li:nth-child(4)>div.submenu>ul{padding: 15px 0 11px calc(50% - 50px);}
+		#gnb_area>ul>li:nth-child(5)>div.submenu>ul{padding: 15px 0 11px calc(50% + 50px);}
+		#gnb_area>ul>li:nth-child(6)>div.submenu>ul{padding: 15px 0 11px calc(50% + 120px);}
+		#gnb_area>ul>li:nth-child(7)>div.submenu>ul{padding: 15px 0 11px calc(50% + 50px);}
+		#gnb_area>ul>li:nth-child(8)>div.submenu>ul{padding: 15px 0 11px calc(50% - 30px);}
+
+
+		#gnb_area>ul>li>a{display:block;font-size:18px;line-height:50px;}
+		#gnb_area>ul>li>div.submenu{clear:both;position: absolute;border-bottom: 1px solid #cdcdcd;left:0;right:0;
+			}
+		#gnb_area>ul>li>div.submenu>ul{overflow: hidden;}
+		#gnb_area>ul>li>div.submenu>ul>li{float: left;padding:0 20px;height: 40px;}
+		#gnb_area>ul>li>div.submenu>ul>li>a{display: block;line-height:40px;}
+
+	</style>
+</head>
+<body>
+	<header id="main_header">
+		<div id="header_top">
+			<div class="top">test</div>
+		</div>
+		<div id="header_middle">
+			<div class="middle">
+			</div>
+
+		</div>
+		<nav id="gnb_area">
+			<ul id="gnb">
+				<li><a href="#">박물관이용</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">오시는길</a></li>
+							<li><a href="#">관람안내</a></li>
+							<li><a href="#">시설안내</a></li>
+							<li><a href="#">자주하는질문</a></li>
+							<li><a href="#">맴버쉽</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">전시</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">전시일정</a></li>
+							<li><a href="#">기획전시</a></li>
+							<li><a href="#">상설전시</a></li>
+							<li><a href="#">기증유물전시</a></li>
+							<li><a href="#">야외전시</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">교육</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">교육일정</a></li>
+							<li><a href="#">교육예약</a></li>
+							<li><a href="#">교육자료</a></li>
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">학술자료</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">발간도서</a></li>
+							<li><a href="#">서울역사아카이브</a></li>
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">문화행사</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">행사일정</a></li>
+							<li><a href="#">문화행사</a></li>
+							<li><a href="#">행사소개</a></li>
+							<li><a href="#">청계천박물관</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">유물</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">소장유물정보</a></li>
+							<li><a href="#">유물구입</a></li>
+							<li><a href="#">유물기증</a></li>
+							<li><a href="#">보존과학</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">열린마당</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">알림</a></li>
+							<li><a href="#">박물관일정</a></li>
+							<li><a href="#">소식지</a></li>
+							<li><a href="#">행정자료</a></li>
+							<li><a href="#">동영상자료</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">박물관소개</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">관장인사말</a></li>
+							<li><a href="#">설립목적/비전</a></li>
+							<li><a href="#">박물관로고</a></li>
+							<li><a href="#">박물관연혁</a></li>
+							<li><a href="#">조직직원</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+</body>
+</html>
