@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+		body{font:16px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{
+			width:1000px;background:orange;
+			/*overflow:hidden;*/
+			margin:0 auto;
+			
+		}
+		#container:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		#container>div.menu{
+			width:200px;padding:12px;
+			float:left;
+		}
+		#container>div.content{
+			width:700px;padding:10px;
+			border-left:1px solid #ccc;
+			float:right;
+		}
+		.active{font-size:16px;font-weight:bold;color:white !important;}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="menu">
+			<ul>
+				<li><a href="menu1.html">menu1</a></li>
+				<li><a href="menu2.html">menu2</a></li>
+				<li><a href="menu3.html"  class="active">menu3</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum adipisci, laboriosam reiciendis sapiente dicta! Voluptas aliquid minus eligendi aut eos rem qui non praesentium suscipit nihil labore voluptate consequatur, facere repellat, cupiditate magnam fuga placeat mollitia nemo molestias dolor. Sed, nam, iusto. Vel ipsum, alias odio velit quod quas libero aliquid atque provident quis earum accusantium pariatur expedita autem. Doloremque nemo at sed, minus quidem suscipit perspiciatis, unde ipsam maiores officia ullam aperiam quasi debitis quo doloribus aliquid repellat voluptatum dignissimos esse impedit quae ipsum fugiat quam. Nulla placeat ut dolores, omnis magni, autem similique obcaecati unde sequi quibusdam reiciendis! Dolores, totam reiciendis vel ea cumque aut minus, sapiente nam amet incidunt consectetur laudantium eaque eligendi voluptatibus, nostrum vero voluptates! Cumque qui fugiat, non, consequatur fugit autem incidunt quasi expedita fuga sed quae ad pariatur dolores libero in nisi aliquid aspernatur! Omnis reiciendis laboriosam at quam molestias sint dolorum, nesciunt, voluptatem tempore nam quisquam. Iure rem quasi pariatur modi, natus tempora. Nobis saepe asperiores recusandae eius tenetur maxime vero ex neque, pariatur autem, sequi inventore enim deleniti magni dicta consequuntur minus maiores aut porro similique. A vero sequi minus dignissimos cumque debitis officia vel doloremque alias! Nulla, rem, possimus.</p>
+		</div>
+	</div>
+	<div id="footer">
+		<address>&copy;2018 Copyright. All right reserved.</address>
+	</div>
+	
+</body>
+</html>

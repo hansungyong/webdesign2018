@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+		body{font:12px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{
+			width:530px;background:#555;
+			/*overflow:hidden;*/
+			
+		}
+		#container:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		#container>div.menu{
+			width:130px;padding:12px;
+			float:left;
+		}
+		#container>div.content{
+			width:350px;padding:10px;
+			border-left:1px solid #ccc;
+			float:right;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="menu">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ab ducimus, culpa. Hic veritatis iure cumque, qui illum quasi repudiandae voluptates aspernatur. Aliquam repellat magnam adipisci placeat sunt doloremque molestias aliquid! Aliquam quidem saepe tempore nemo nulla! Ut neque modi eum tempore velit consectetur cumque, ipsum ullam natus debitis id labore quam eius, harum consequatur corporis possimus a nobis, voluptas optio eligendi ex vitae porro cum veritatis. Rerum itaque dolorum libero aliquam. Nihil alias consequatur voluptas deleniti consectetur nisi sit temporibus, dolor explicabo, recusandae omnis molestiae voluptatibus cupiditate tenetur atque. Maxime eum sed ipsum corporis alias inventore esse, similique!</p>
+		</div>
+	</div>
+	<div id="footer">
+		<address>&copy;2018 Copyright. All right reserved.</address>
+	</div>
+	
+</body>
+</html>
